@@ -330,37 +330,39 @@
                                                             </div>
                                                             <!--Questão02-->
                                                             <!--Questão03-->
-                                                            <button style="background: var(--Bs-primaria);" class="w-25" onclick="abrirPopup()">
+                                                            <button style="background: var(--Bs-primaria);" class="w-25" onclick="abrirPopup3()">
                                                                 <img class="w-75" style="background: var(--Bs-primaria);" src="./img/icon/Icon03.png" alt="">
                                                             </button>
             
-                                                            <div class="overlay" id="overlay" onclick="fecharPopup()">X</div>
+                                                            <div class="overlay3" id="overlay3" onclick="fecharPopup3()">X</div>
                                                             
-                                                            <div class="popup" id="popup">
-                                                                <button class="close-btn" onclick="fecharPopup()">X</button>
-                                                                <p><strong style="color: var(--color-Secundaria);">Questão 1</strong></p>
+                                                            <div class="popup3" id="popup3">
+                                                                <button class="close-btn3" onclick="fecharPopup3()">X</button>
+                                                                <p><strong style="color: var(--color-Secundaria);">Questão 3</strong></p>
                                                                 <p><strong style="color: var(--color-Secundaria);">Cenário:</strong></p>
-                                                                <p>A flexibilidade permite lidar com imprevistos e </p>
-                                                                <p>mudanças no cotidiano, como ajustar as</p>
-                                                                <p>prioridades ou encontrar novas soluções para </p>
-                                                                <p>problemas inesperados.</p>
+                                                                <p>As pessoas precisam se adaptar rapidamente a </p>
+                                                                <p>novas tendências para se manterem atualizadas. A</p>
+                                                                <p>falta de flexibilidade pode resultar em desvantagem</p>
+                                                                <p>competitiva.</p>
                                                                     <br>
                                                                 <p><strong style="color: var(--color-Secundaria);">Instruções:</strong></p>   
-                                                                <p>Com base no texto, analise como a flexibilidade</p>
-                                                                <p>pode auxiliar na resolução de desafios diários. </p>
-                                                                <p>Utilize exemplos práticos para fundamentar sua </p>
-                                                                <p>resposta.</p> 
+                                                                <p>A partir do exemplo citado no texto referente às</p>
+                                                                <p>tendências do mercado profissional, avalie o </p>
+                                                                <p>impacto da flexibilidade no contexto de busca de</p>
+                                                                <p>novos conhecimentos e sua relação com as</p>
+                                                                <p>tendências. Considere como a capacidade de </p>
+                                                                <p>adaptação pode influenciar a inovação.</p> 
                                                                     <br>
                                                                 <p><strong style="color: var(--color-Secundaria);">Pergunta:</strong></p>   
-                                                                <p>Como a flexibilidade contribui para a adaptação a</p>
-                                                                <p>imprevistos no dia a dia e para a busca de soluções</p>
-                                                                <p>eficazes?</p>
+                                                                <p>Por que a flexibilidade é um fator determinante </p>
+                                                                <p>para o sucesso de pessoas que estão atentas às </p>
+                                                                <p>tendências de mercado?</p>
                                                                     <br>
-                                                                <textarea style="border: 1px solid #000 !important;" id="feedbackText" placeholder="Digite aqui..."></textarea>
+                                                                <textarea style="border: 1px solid #000 !important;" id="feedbackText3" placeholder="Digite aqui..."></textarea>
                                                                 <br>
                                                                 <br>
                                                                 <span style="display: flex; justify-content: center; align-items: center;">
-                                                                    <button style="background: var(--bs-Quarta); color: var(--bs-white); padding: 0.5rem 1rem !important; border-radius: 15px;" onclick="enviarFeedback()">Preciso de ajuda</button>
+                                                                    <button style="background: var(--bs-Quarta); color: var(--bs-white); padding: 0.5rem 1rem !important; border-radius: 15px;" onclick="enviarFeedback3()">Preciso de ajuda</button>
                                                                 </span>
                                                             </div>
                                                             <!--Questão03-->
@@ -391,66 +393,7 @@
             </section>
         <!--01 Carrossel-->
     </main>
-</body>         
-
-<script>
-    function abrirPopup() {
-        document.getElementById("popup").style.display = "block";
-        document.getElementById("overlay").style.display = "block";
-    }
-
-    function fecharPopup() {
-        document.getElementById("popup").style.display = "none";
-        document.getElementById("overlay").style.display = "none";
-    }
-
-    function enviarFeedback() {
-        let feedback = document.getElementById("feedbackText").value.trim();
-        if (feedback === "") {
-            Swal.fire({
-                icon: 'warning',
-                title: 'Oops...',
-                text: 'Por favor, escreva algo antes de enviar!',
-            });
-        } else {
-            Swal.fire({
-                icon: 'info',
-                title: 'Exemplo de resposta <br><br>',
-                html: 'A flexibilidade é essencial para o equilíbrio emocional, pois permite que as pessoas enfrentem mudanças sem sofrer impactos negativos excessivos. Segundo o texto, esta habilidade está associada à resiliência e ao otimismo, que ajudam na superação de adversidades. Ao aprender a ajustar comportamentos e pensamentos sem renunciar a valores essenciais, os indivíduos conseguem lidar melhor com desafios e evitar padrões rígidos de pensamento, o que fortalece tanto o desenvolvimento pessoal quanto relações interpessoais.<br><br>',
-            });
-            fecharPopup();
-        }
-    }
-
-
-    function abrirPopup2() {
-        document.getElementById("popup2").style.display = "block";
-        document.getElementById("overlay2").style.display = "block";
-    }
-
-    function fecharPopup2() {
-        document.getElementById("popup2").style.display = "none";
-        document.getElementById("overlay2").style.display = "none";
-    }
-
-    function enviarFeedback2() {
-        let feedback = document.getElementById("feedbackText2").value.trim();
-        if (feedback === "") {
-            Swal.fire({
-                icon: 'warning',
-                title: 'Oops...',
-                text: 'Por favor, escreva algo antes de enviar!',
-            });
-        } else {
-            Swal.fire({
-                icon: 'info',
-                title: 'Exemplo de resposta <br><br>',
-                html: 'A flexibilidade facilita a adaptação a situações inesperadas, permitindo que as pessoas reorganizem seus planos sem comprometer seus objetivos. Seja ao mudar a rota no trânsito ou ao adotar novas tecnologias para otimizar tarefas, esta habilidade ajuda a enfrentar desafios de forma prática e eficiente.<br><br>',
-            });
-            fecharPopup2();
-        }
-    }
-</script>
+</body>
     <!--Js-->
         <script src="./js/atividades.js"></script>
         <script src="./js/atividade2.js"></script>
