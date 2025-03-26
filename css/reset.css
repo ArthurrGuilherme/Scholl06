@@ -1,0 +1,25 @@
+* {
+    padding: 0px !important;
+    border: 0px !important;
+    margin: 0px !important;
+}
+/*Vareaveis*/
+:root {
+    /*Fundo*/
+    --Bs-primaria: #CCE2DC;
+    --Bs-Secundario: #FFB01C;
+    --bs-terciaria: #CBD211;
+    --bs-Quarta: #007fa3;
+    /*Fonts*/
+    --color-primaria: #0687A7;
+    --color-Secundaria: #003057;
+    --color-terciaria: #0687A7;
+}
+/*Carroeis*/
+.carousel-control-next-icon {
+    background-image: url(../img/icons/f4.png) !important;
+}
+.carousel-control-prev-icon {
+    background-image: url(../img/icons/f3.png) !important;
+}
+/*Carroeis*/
