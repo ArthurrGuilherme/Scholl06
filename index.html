@@ -235,7 +235,7 @@
                                   </div>
                                   <div class="carousel-item">
                                     <div class="w-100 d-flex justify-content-center align-items">
-                                        <div class="" style="max-height: 440px; overflow-y: auto">
+                                        <div style="max-height: 440px; overflow-y: auto">
                                             <br>
                                             <!--Introdução-->
                                                 <span style="color: var(--color-primaria);">
@@ -244,6 +244,7 @@
                                                     </span>
                                                 </span>
                                             <!--Introdução-->
+                                            <br>
                                             <!--Texto-->
                                                 <span style="color: var(--color-Secundaria);">  
                                                     <p>Agora é a sua vez! Para revisar conteúdo da parte 2,</p>
@@ -254,19 +255,118 @@
                                                     <p>trabalhar com outros cenários.</p>
                                                         <br>
                                                 </span>
-                                                <span>
-                                                    <button onclick="abrirPopup()">Dar Feedback</button>
-    
-                                                    <div class="overlay" id="overlay" onclick="fecharPopup()"></div>
+                                                <div class="d-flex justify-content-center w-100 align-items-center">
+                                                    <span  class="w-100 d-flex justify-content-center flex-column">
+                                                            <!--Questão01-->
+                                                                <button style="background: var(--Bs-primaria);" class="w-25" onclick="abrirPopup()">
+                                                                    <img class="w-75" style="background: var(--Bs-primaria);" src="./img/icon/Icon03.png" alt="">
+                                                                </button>
+                
+                                                                <div class="overlay" id="overlay" onclick="fecharPopup()">X</div>
+                                                                
+                                                                <div class="popup" id="popup">
+                                                                    <button class="close-btn" onclick="fecharPopup()">X</button>
+                                                                    <p><strong style="color: var(--color-Secundaria);">Questão 1</strong></p>
+                                                                    <p><strong style="color: var(--color-Secundaria);">Cenário:</strong></p>
+                                                                    <p>A flexibilidade permite lidar com imprevistos e </p>
+                                                                    <p>mudanças no cotidiano, como ajustar as</p>
+                                                                    <p>prioridades ou encontrar novas soluções para </p>
+                                                                    <p>problemas inesperados.</p>
+                                                                        <br>
+                                                                    <p><strong style="color: var(--color-Secundaria);">Instruções:</strong></p>   
+                                                                    <p>Com base no texto, analise como a flexibilidade</p>
+                                                                    <p>pode auxiliar na resolução de desafios diários. </p>
+                                                                    <p>Utilize exemplos práticos para fundamentar sua </p>
+                                                                    <p>resposta.</p> 
+                                                                        <br>
+                                                                    <p><strong style="color: var(--color-Secundaria);">Pergunta:</strong></p>   
+                                                                    <p>Como a flexibilidade contribui para a adaptação a</p>
+                                                                    <p>imprevistos no dia a dia e para a busca de soluções</p>
+                                                                    <p>eficazes?</p>
+                                                                        <br>
+                                                                    <textarea style="border: 1px solid #000 !important;" id="feedbackText" placeholder="Digite aqui..."></textarea>
+                                                                    <br>
+                                                                    <br>
+                                                                    <span style="display: flex; justify-content: center; align-items: center;">
+                                                                        <button style="background: var(--bs-Quarta); color: var(--bs-white); padding: 0.5rem 1rem !important; border-radius: 15px;" onclick="enviarFeedback()">Exemplo de resposta</button>
+                                                                    </span>
+                                                                </div>
+                                                            <!--Questão01-->
+                                                            <!--Questão02-->
+                                                            <button style="background: var(--Bs-primaria);" class="w-25" onclick="abrirPopup2()">
+                                                                <img class="w-75" style="background: var(--Bs-primaria);" src="./img/icon/Icon04.png" alt="">
+                                                            </button>
+            
+                                                            <div class="overlay2" id="overlay2" onclick="fecharPopup2()">X</div>
+                                                            
+                                                            <div class="popup2" id="popup2">
+                                                                <button class="close-btn2" onclick="fecharPopup2()">X</button>
+                                                                <p><strong style="color: var(--color-Secundaria);">Questão 2</strong></p>
+                                                                <p><strong style="color: var(--color-Secundaria);">Cenário:</strong></p>
+                                                                <p>A flexibilidade é essencial para o bem-estar</p>
+                                                                <p>emocional e o desenvolvimento pessoal, ajudando</p>
+                                                                <p>a superar desafios diários e a evitar frustrações </p>
+                                                                <p>diante de mudanças inesperadas.</p>
+                                                                    <br>
+                                                                <p><strong style="color: var(--color-Secundaria);">Instruções:</strong></p>   
+                                                                <p>Utilizando os conceitos apresentados no texto,</p>
+                                                                <p>analise a importância da flexibilidade para o </p>
+                                                                <p>desenvolvimento pessoal. Considere aspectos </p>
+                                                                <p>como resiliência, adaptação e a capacidade de</p> 
+                                                                <p>equilibrar valores individuais com as demandas do</p>
+                                                                <p>ambiente.</p>
+                                                                    <br>
+                                                                <p><strong style="color: var(--color-Secundaria);">Pergunta:</strong></p>   
+                                                                <p>De que forma a flexibilidade contribui para o </p>
+                                                                <p>crescimento pessoal e o bem-estar emocional das</p>
+                                                                <p>pessoas?</p>
+                                                                    <br>
+                                                                <textarea  id="feedbackText2" placeholder="Digite aqui..."></textarea>
+                                                                <br>
+                                                                <br>
+                                                                <span style="display: flex; justify-content: center; align-items: center;">
+                                                                    <button style="background: var(--bs-Quarta); color: var(--bs-white); padding: 0.5rem 1rem !important; border-radius: 15px;" onclick="enviarFeedback2()">Exemplo de resposta</button>
+                                                                </span>
+                                                            </div>
+                                                            <!--Questão02-->
+                                                            <!--Questão03-->
+                                                            <button style="background: var(--Bs-primaria);" class="w-25" onclick="abrirPopup()">
+                                                                <img class="w-75" style="background: var(--Bs-primaria);" src="./img/icon/Icon03.png" alt="">
+                                                            </button>
+            
+                                                            <div class="overlay" id="overlay" onclick="fecharPopup()">X</div>
+                                                            
+                                                            <div class="popup" id="popup">
+                                                                <button class="close-btn" onclick="fecharPopup()">X</button>
+                                                                <p><strong style="color: var(--color-Secundaria);">Questão 1</strong></p>
+                                                                <p><strong style="color: var(--color-Secundaria);">Cenário:</strong></p>
+                                                                <p>A flexibilidade permite lidar com imprevistos e </p>
+                                                                <p>mudanças no cotidiano, como ajustar as</p>
+                                                                <p>prioridades ou encontrar novas soluções para </p>
+                                                                <p>problemas inesperados.</p>
+                                                                    <br>
+                                                                <p><strong style="color: var(--color-Secundaria);">Instruções:</strong></p>   
+                                                                <p>Com base no texto, analise como a flexibilidade</p>
+                                                                <p>pode auxiliar na resolução de desafios diários. </p>
+                                                                <p>Utilize exemplos práticos para fundamentar sua </p>
+                                                                <p>resposta.</p> 
+                                                                    <br>
+                                                                <p><strong style="color: var(--color-Secundaria);">Pergunta:</strong></p>   
+                                                                <p>Como a flexibilidade contribui para a adaptação a</p>
+                                                                <p>imprevistos no dia a dia e para a busca de soluções</p>
+                                                                <p>eficazes?</p>
+                                                                    <br>
+                                                                <textarea style="border: 1px solid #000 !important;" id="feedbackText" placeholder="Digite aqui..."></textarea>
+                                                                <br>
+                                                                <br>
+                                                                <span style="display: flex; justify-content: center; align-items: center;">
+                                                                    <button style="background: var(--bs-Quarta); color: var(--bs-white); padding: 0.5rem 1rem !important; border-radius: 15px;" onclick="enviarFeedback()">Preciso de ajuda</button>
+                                                                </span>
+                                                            </div>
+                                                            <!--Questão03-->
+                                                    </span>
                                                     
-                                                    <div class="popup" id="popup">
-                                                        <button class="close-btn" onclick="fecharPopup()">X</button>
-                                                        <h2>Deixe seu Feedback</h2>
-                                                        <textarea id="feedbackText" placeholder="Digite aqui..."></textarea>
-                                                        <br>
-                                                        <button onclick="enviarFeedback()">Preciso de ajuda</button>
-                                                    </div>
-                                                </span>
+                                                </div>    
                                             <!--Texto-->
                                             <br>
                                         </div>
@@ -314,11 +414,40 @@
             });
         } else {
             Swal.fire({
-                icon: 'success',
-                title: 'Obrigado!',
-                text: 'Seu feedback foi enviado com sucesso!',
+                icon: 'info',
+                title: 'Exemplo de resposta <br><br>',
+                html: 'A flexibilidade é essencial para o equilíbrio emocional, pois permite que as pessoas enfrentem mudanças sem sofrer impactos negativos excessivos. Segundo o texto, esta habilidade está associada à resiliência e ao otimismo, que ajudam na superação de adversidades. Ao aprender a ajustar comportamentos e pensamentos sem renunciar a valores essenciais, os indivíduos conseguem lidar melhor com desafios e evitar padrões rígidos de pensamento, o que fortalece tanto o desenvolvimento pessoal quanto relações interpessoais.<br><br>',
             });
             fecharPopup();
+        }
+    }
+
+
+    function abrirPopup2() {
+        document.getElementById("popup2").style.display = "block";
+        document.getElementById("overlay2").style.display = "block";
+    }
+
+    function fecharPopup2() {
+        document.getElementById("popup2").style.display = "none";
+        document.getElementById("overlay2").style.display = "none";
+    }
+
+    function enviarFeedback2() {
+        let feedback = document.getElementById("feedbackText2").value.trim();
+        if (feedback === "") {
+            Swal.fire({
+                icon: 'warning',
+                title: 'Oops...',
+                text: 'Por favor, escreva algo antes de enviar!',
+            });
+        } else {
+            Swal.fire({
+                icon: 'info',
+                title: 'Exemplo de resposta <br><br>',
+                html: 'A flexibilidade facilita a adaptação a situações inesperadas, permitindo que as pessoas reorganizem seus planos sem comprometer seus objetivos. Seja ao mudar a rota no trânsito ou ao adotar novas tecnologias para otimizar tarefas, esta habilidade ajuda a enfrentar desafios de forma prática e eficiente.<br><br>',
+            });
+            fecharPopup2();
         }
     }
 </script>
